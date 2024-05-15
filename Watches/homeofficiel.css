@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+}
+nav .logo{
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+nav ul i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}  
+nav .shopping-cart-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+.home {
+    background-image: url('29_gentleman_watch_british_51e65ecb-b549-47f6-bfec-e8bc3e0ad269_1600x.webp'); /* Replace 'background-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    /* Add any additional styling you need */
+}
+ .home__data {
+    /* Style the text container */
+    padding: 20px; /* Add padding for spacing */
+    color:#ffffff;
+    
+}
+ .home__title{
+    font-size: 28px;
+    margin-bottom: 1rem;
+ }
+ .home__images {
+    width: 100%;
+    /* Style the slide container */
+    display: flex;
+    justify-content: center; /* Center the slide horizontally */
+    align-items: center; /* Center the slide vertically */
+    
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between elements */
+}
+
+
+.home__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+
+.button {
+    display: inline-block;
+    background-color:white; /* Example background color (red) */
+    color:black; /* Example text color (white) */
+    font-weight: 600; /* Example font weight */
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.4s;
+    
+        /* Optional: Add styles for the button */
+        margin-top: 20px; /* Adjust top margin for spacing */
+    
+}
+.row {
+    width: 70%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+
+.row .imgWrapper {
+    overflow: hidden;
+}
+
+.row .imgWrapper img {
+    padding-left: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.row.contentWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+.row .contentWrapper .textWrapper {
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.row .contentWrapper .textWrapper span {
+    display: inline-block;
+    background: #000;
+    width: 70px;
+    height: 5px;
+}
+.row .contentWrapper h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    padding-bottom: 20px;
+}
+.row .contentWrapper p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+.row .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: grey;
+    color: white;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+#imagess {
+    display: flex;
+}
+
+#imagess img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 200px; /* Adjust spacing between images */
+}
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product{
+    overflow: hidden;
+    background: #ffffff;
+    color: #21201e ;
+    text-align: center;
+    width: 240px;
+    height: 340px;
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+.product-image-small {
+    width: 178px; 
+    height: auto; 
+    margin-left: 55px;
+    padding-top: 15px;
+}
+.title1 {
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+.product a:link,
+.product a:visited {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    padding: 0.8rem 2.5rem; /* Adjusted padding */
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    transition: all 0.2s;
+}
+.product a:hover{
+    transform: scale(1.1);
+}
+.product-image-small1 {
+    width: 165px; 
+    height: auto; 
+    margin-left: px;
+}
+.product-image-small2 {
+    width: 146px; 
+    height: auto; 
+    margin-left: 10px;
+}
+.product-image-small3 {
+    width: 141px; 
+    height: auto; 
+    margin-left: 10px;
+}
+ul li{
+    list-style-type:none;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+.footer_info a {
+    color: white; /* Set the color of the links to white */
+    text-decoration: none; /* Remove the underline */
+}
+.footer_info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+.footer_info,.footer_width{
+    padding: 0 15px;
+}
+.footer_info h2{
+    margin-bottom: 20px;
+}
+.about , .contact {
+    width: 40% ;
+}
+.link{
+    width: 20%;
+}
+.social-media{
+    margin-top: 30px;
+}
+.social-media ul{
+    display: flex;
+}
+.social-media ul li a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: center;
+}
+.link ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.contact ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact ul li span {
+    margin-right:15px ;
+}
+
+
+
+
+
+
+
+
+

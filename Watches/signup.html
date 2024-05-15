@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+        <form action="#">
+            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Name">
+            <div class="input-box">
+                <input type="password" placeholder="Password" class="password" id="password1">
+                <img src="view.png" alt="" style="width: 20px; height: 20px;" class="eyeicon" id="eyeicon1">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" class="password" id="password2">
+                <img src="view.png" alt="" style="width: 20px; height: 20px;" class="eyeicon" id="eyeicon2">
+            </div>
+        </form>
+        <div class="terms">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to these <a href="#">Terms & Conditions</a></label>
+        </div>
+        <button onclick="signup(); return false;">Sign up</button> <!-- Removed <a> tag -->
+        <div class="member">
+            Already a member? <a href="login3.html">Login here</a>    
+        </div>
+    </div>
+    <script>
+        let eyeicon1 = document.getElementById("eyeicon1");
+        let eyeicon2 = document.getElementById("eyeicon2");
+        let password1 = document.getElementById("password1");
+        let password2 = document.getElementById("password2");
+        
+        eyeicon1.onclick = function() {
+            if (password1.type === "password") {
+                password1.type = "text";
+                eyeicon1.src = "hidden.png";
+            } else {
+                password1.type = "password";
+                eyeicon1.src = "view.png";
+            }
+        }
+
+        eyeicon2.onclick = function() {
+            if (password2.type === "password") {
+                password2.type = "text";
+                eyeicon2.src = "hidden.png";
+            } else {
+                password2.type = "password";
+                eyeicon2.src = "view.png";
+            }
+        }
+
+        function signup() {
+            var username = document.getElementById('username').value; 
+            var password = document.getElementById('password1').value;
+
+            if (password.length < 8) {
+                alert('You must use 8 characters at least');
+                return false; 
+            }
+            if (!verif()) {
+                return false; 
+            }
+            if (!verif2()) {
+                return false; 
+            }
+            
+            window.location.href = "homeofficiel.html";
+        }
+
+        function verif() {
+            var confirm = document.getElementById('password2').value; 
+            var password = document.getElementById('password1').value;
+
+            if (confirm !== password) {
+                alert('Passwords do not match');
+                return false; 
+            }
+            return true; 
+        }
+
+        function verif2() {
+            var confirm = document.getElementById('checkbox').checked; 
+
+            if (!confirm) {
+                alert('Please accept the terms and conditions');
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</body>
+</html>

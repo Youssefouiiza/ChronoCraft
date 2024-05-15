@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Product details</title>
+  <link rel="stylesheet" href="Product details.css">
+</head>
+<body>
+  <div class="container">
+     <div class="wrapper">
+      <div class="product-box">
+        <div class="all-images">
+        <div class="small-images">
+          <img src="emporio2.PNG" class="image1" onclick="clicking(this)" > <br>
+          <img src="emporio3.PNG" class="image1" onclick="clicking(this)" > <br>
+          <img src="emporio4.PNG" class="image1" onclick="clicking(this)" > <br>
+          <img src="emporio5.PNG" class="image1" onclick="clicking(this)" > <br>
+        </div>
+        
+        <div class="main-image">
+          <img src="emporio1.PNG" id="imagebox">
+        </div>
+      </div>
+      </div>
+      <div class="text">
+        <div class="content">
+          <p class="brand">Brand: Armani</p>
+          <h2>
+            Emporio Armani
+            Mario19</h2>
+          <div class="review">
+            <span>(5)</span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div class="price-box">
+            <p class="price"> 20000 Dh</p>
+            <strike>21000 Dh</strike>
+          </div>
+          <div>
+            <p> Size : <select name="size" id=""> 
+              <option value="select colour">select colour</option>
+               <option value="black">black</option>
+               <option value="green">green</option>
+               <option value="gold">gold</option>
+               <option value="red">red</option>
+            </select></p>
+            <p>Quantity <input type="text" value="1"></p>
+            <button>
+              <span class="fa fa-shopping-cart">
+                </span>
+                Add to Cart
+            </button>
+            <button class="buy">
+              <span class=" fa fa-shopping-cart"></span>
+              Buy now
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+     </div>
+  </div>
+  <script>
+   function clicking(thumbnail){
+  var fullimg = document.getElementById("imagebox");
+  fullimg.src = thumbnail.src;
+}
+  </script>
+</body>
+</html>

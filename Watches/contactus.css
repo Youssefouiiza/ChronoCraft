@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #fff; /* Added background color */
+}
+
+nav .logo{
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}  
+
+nav .shopping-cart-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact_section {
+    color: #fff;
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0; /* Added padding */
+    text-align: center; /* Center align content */
+}
+
+.contact_section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact_section input,
+.contact_section textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    height: 40px;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.contact_section input::placeholder,
+.contact_section textarea::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.contact_section button {
+    background-color: #179dfb;
+    padding: 12px 55px;
+    outline: none;
+    border: none;
+    border: 1px solid #179dfb;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact_section button:hover {
+    color: #179dfb;
+    background-color: transparent;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center; /* Center align content */
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info h2 {
+    margin-bottom: 20px;
+}
+
+.about,
+.contact {
+    width: 40%;
+}
+
+.link {
+    width: 20%;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li a {
+    display: inline-block;
+    margin-right: 20px
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #fff; /* Added background color */
+}
+
+nav .logo{
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    margin: 0 10px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 0;
+    height: 2.5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav ul i{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}  
+
+nav .shopping-cart-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact_section {
+    color: #fff;
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0; /* Added padding */
+    text-align: center; /* Center align content */
+}
+
+.contact_section .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact_section input,
+.contact_section textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    height: 40px;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.contact_section input::placeholder,
+.contact_section textarea::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.contact_section button {
+    background-color: #179dfb;
+    padding: 12px 55px;
+    outline: none;
+    border: none;
+    border: 1px solid #179dfb;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact_section button:hover {
+    color: #179dfb;
+    background-color: transparent;
+}
+
+
+
+ul li{
+    list-style-type:none;
+    
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+.footer_info a {
+    color: white; /* Set the color of the links to white */
+    text-decoration: none; /* Remove the underline */
+}
+.footer_info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+.footer_info,.footer_width{
+    padding: 0 15px;
+}
+.footer_info h2{
+    margin-bottom: 20px;
+}
+.about , .contact {
+    width: 40% ;
+}
+.link{
+    width: 20%;
+}
+.social-media{
+    margin-top: 30px;
+}
+.social-media ul{
+    display: flex;
+}
+.social-media ul li a {
+    display: inline-block;
+    margin-right: 50px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: center;
+}
+.link ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.contact ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact ul li span {
+    margin-right:15px ;
+}

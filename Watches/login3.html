@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login3.css">
+</head>
+<body>
+    <div class="video-container">
+        
+    </div>
+    <div class="content">
+        <div class="wrapper">
+            <h1>Log in</h1>
+            <form action="#">
+                <input type="text" placeholder="Username" id="username"> 
+                <div class="input-box">
+                    <input type="password" placeholder="Password" class="password" id="password1">
+                    <img src="view.png" alt="" style="width: 20px; height: 20px;" class="eyeicon" id="eyeicon1"> 
+                </div>
+            </form>
+            <button onclick="add()"><a href="homeofficiel.html">Log in</a></button> 
+            <div class="member">
+                Not a member? <a href="signup.html">Register Now</a>    
+            </div>
+        </div>
+    </div>
+    <script>
+        let eyeicon1 = document.getElementById("eyeicon1");
+        let password1 = document.getElementById("password1");
+
+        eyeicon1.onclick = function() {
+            if (password1.type === "password") {
+                password1.type = "text";
+                eyeicon1.src = "hidden.png";
+            } else {
+                password1.type = "password";
+                eyeicon1.src = "view.png";
+            }
+        }
+        function add() {
+            var username = document.getElementById('username').value; // Get username input value
+            var password = document.getElementById('password1').value;
+
+            if (password.length < 8) {
+                alert('You must use 8 characters at least');
+                return false;
+            } 
+            
+        }
+    </script>
+</body>
+</html>
